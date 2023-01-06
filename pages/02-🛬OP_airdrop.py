@@ -56,7 +56,7 @@ with fig_col1:
             fig11= alt.Chart(df1).mark_area().encode(x='DATE:T', y='CUM_VOLUME').properties( title='Cumulative volume of claimed airdrop over time')
             st.write(fig11.properties(width=500))
 with fig_col2:
-            fig12=alt.Chart(df1).mark_bar().encode(x='DATE:T', y='CUM_WALLETS',color=alt.value('red')).properties(title='Cumulative count of wallets claimed airdrop over time')
+            fig12=alt.Chart(df1).mark_line().encode(x='DATE:T', y='CUM_WALLETS',color=alt.value('red')).properties(title='Cumulative count of wallets claimed airdrop over time')
 
             st.write(fig12.properties(width=500))
 
