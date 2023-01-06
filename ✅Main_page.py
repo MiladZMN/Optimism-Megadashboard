@@ -62,7 +62,7 @@ st.write(
     
 
     The codes of this tool are accessible in its 
-    [**GitHub Repository**](https://github.com/alitslm/cross_chain_monitoring).
+    [**GitHub Repository**](https://github.com/MiladZMN/Optimism-Megadashboard).
 """)
 st.subheader('References')
 st.write(
