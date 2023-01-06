@@ -47,8 +47,8 @@ with placeholder.container():
         # create three columns
         col1, col2, col3 = st.columns(3)
 col1.metric(label="Total users claimed optimism airdrop", value=df['WALLETS'])
-col2.metric(label="Total volume of claimed $OP", value=df['VOLUME_OP'])
-col3.metric(label="Share (%) of claimed $OP", value=df['SHARE_VOLUME'])
+col2.metric(label="Total volume of claimed $OP", value=round(df['VOLUME_OP'],2))
+col3.metric(label="Share (%) of claimed $OP", value=round(df['SHARE_VOLUME'],2))
 
 fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
