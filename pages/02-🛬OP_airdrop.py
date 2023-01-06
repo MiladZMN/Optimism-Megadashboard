@@ -55,7 +55,7 @@ fig_col1, fig_col2 = st.columns(2)
 with fig_col1:
            
             fig11= alt.Chart(df1).mark_area().encode(x='DATE:T', y='CUM_VOLUME').properties( 
-            title='Cumulative volume of claimed airdrop over time'),
+            title='Cumulative volume of claimed airdrop over time')
 
             st.write(fig11.properties(width=500))
 with fig_col2:
